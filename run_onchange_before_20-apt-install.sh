@@ -7,7 +7,6 @@ sudo apt install -y \
   zoxide \
   zsh \
   keyd \
-  neovim \
   ripgrep \
   wl-clipboard \
   zsh-autosuggestions \
