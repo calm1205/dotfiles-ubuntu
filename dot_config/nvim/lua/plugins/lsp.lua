@@ -5,7 +5,6 @@ return {
   },
   config = function()
     local map = vim.keymap.set
-    local npm_global_root = vim.fn.system('npm root -g'):gsub('\n', '')
 
     -- cmp-nvim-lspのcapabilitiesを全LSPサーバーに適用
     vim.lsp.config('*', {
@@ -53,33 +52,7 @@ return {
       },
     }
 
-    -- ts_ls
-    vim.lsp.config('ts_ls', {
-      filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
-      init_options = {
-        plugins = {
-          {
-            name = '@vue/typescript-plugin',
-            location = npm_global_root .. '/@vue/typescript-plugin',
-            languages = { 'vue' },
-          },
-        },
-      },
-    })
-
-    -- pyright
-    vim.lsp.config.pyright = {}
-
-    -- vue_ls (Hybrid Mode: HTML/CSSのみ担当、TypeScriptはts_lsが担当)
-    vim.lsp.config('vue_ls', {
-      init_options = {
-        typescript = {
-          tsdk = npm_global_root .. '/typescript/lib',
-        },
-      },
-    })
-
     -- LSPサーバーを有効化
-    vim.lsp.enable({ "lua_ls", "ts_ls", "pyright", "vue_ls" })
+    vim.lsp.enable({ "lua_ls" })
   end,
 }
