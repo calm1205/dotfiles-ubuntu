@@ -1,6 +1,13 @@
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR=nvim
 
+# history: terminalを閉じても履歴を保持
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+
 # zoxide
 eval "$(zoxide init zsh)"
 alias cd='z'
