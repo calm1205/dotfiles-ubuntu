@@ -30,18 +30,23 @@ function M.apply(config)
       action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
     },
     {
+      key = "]",
+      mods = "ALT|SUPER",
+      action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+    },
+    {
       key = "n",
       mods = "ALT|SHIFT",
       action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
     },
     {
       key = "[",
-      mods = "ALT",
+      mods = "CTRL",
       action = act.ActivatePaneDirection("Prev"),
     },
     {
       key = "]",
-      mods = "ALT",
+      mods = "CTRL",
       action = act.ActivatePaneDirection("Next"),
     },
   }
