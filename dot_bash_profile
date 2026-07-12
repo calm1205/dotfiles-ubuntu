@@ -1,9 +1,0 @@
-export PATH="$HOME/.local/bin:$PATH"
-
-# zoxide
-eval "$(zoxide init bash)"
-alias cd='z'
-alias cdi='zi'
-
-# starship
-eval "$(starship init bash)"
