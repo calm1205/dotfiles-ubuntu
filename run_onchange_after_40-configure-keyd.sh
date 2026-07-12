@@ -12,6 +12,8 @@ v = C-v
 w = C-w
 z = C-z
 t = C-t
+r = C-r
+l = C-l
 
 [meta+shift]
 backslash = C-tab
