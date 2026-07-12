@@ -11,4 +11,5 @@ sudo apt install -y \
   wl-clipboard \
   zsh-autosuggestions \
   gh \
-  fonts-noto-cjk
+  fonts-noto-cjk \
+  starship
