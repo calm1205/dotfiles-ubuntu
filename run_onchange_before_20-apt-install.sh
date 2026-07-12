@@ -12,4 +12,5 @@ sudo apt install -y \
   zsh-autosuggestions \
   gh \
   fonts-noto-cjk \
-  starship
+  starship \
+  ibus-mozc
