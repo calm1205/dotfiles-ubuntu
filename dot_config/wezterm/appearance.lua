@@ -7,7 +7,7 @@ function M.apply(config)
   config.font_size = 14.0
   config.font = wezterm.font_with_fallback({
     "JetBrains Mono",
-    "Hiragino Sans",
+    "Noto Sans CJK JP",
   })
   config.default_cursor_style = "BlinkingBlock"
   config.use_ime = true

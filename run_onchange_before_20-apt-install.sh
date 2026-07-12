@@ -10,4 +10,5 @@ sudo apt install -y \
   ripgrep \
   wl-clipboard \
   zsh-autosuggestions \
-  gh
+  gh \
+  fonts-noto-cjk
