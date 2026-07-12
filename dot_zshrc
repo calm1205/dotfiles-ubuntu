@@ -15,7 +15,6 @@ alias cdi='zi'
 
 # alias
 alias ls='ls --color=auto'
-alias cat='gat'
 alias vim='nvim'
 alias vi='vim'
 
