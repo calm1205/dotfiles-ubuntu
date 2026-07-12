@@ -15,8 +15,8 @@ function M.apply(config)
   config.window_background_opacity = 0.8
   config.macos_window_background_blur = 20
 
-  -- タイトルバーを非表示
-  config.window_decorations = "RESIZE"
+  -- タイトルバーを表示（移動・リサイズをOSに管理させる）
+  config.window_decorations = "TITLE|RESIZE"
   -- タブバーの表示
   config.show_tabs_in_tab_bar = true
   -- タブが一つの時は非表示
